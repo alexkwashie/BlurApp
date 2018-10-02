@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    background: grey;
+    color: aliceblue;
+    font-size: 30px
+}
+
+.controls {
+    margin-bottom: 40px;
+}
+
+
+/* root is the base of an htlm doc (it is similar to innerHTML)
+So with this example, the variables are decleared in the root of the HTLM page and used later*/
+
+:root {
+    --base: yellow;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+input {
+    width: 70px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur))
+}
+
+.hl {
+    color: var(--base);
+}
