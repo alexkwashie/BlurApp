@@ -2,6 +2,7 @@ const inputs = document.querySelectorAll('.controls input');
 
 function handleUpdate() {
     const suffix = this.dataset.sizing || ' ';
+    //the dataset('data-') and anything after is (.sizing etc)
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
 }
 
